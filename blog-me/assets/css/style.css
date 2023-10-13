@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+body{
+    background-color: #8a817c;
+}
+.big-nav{
+    width: 95%;
+    margin-left: auto;
+    /* margin-top: 40px; */
+    background-color: white;
+    padding: 25px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    align-items: center;
+    position: sticky;
+    z-index: 2;
+    top: 10px;
+   background-color: #8a817c;
+}
+.btn-bar{
+    display: none;
+}
+.nav ul{
+    display: flex;
+    gap: 5px;
+}
+.nav a{
+    padding: 5px 10px;
+    color: white;
+    font-size: 22px;
+}
+.big-nav .content{
+    display: flex;
+    justify-content: space-around;
+}
+.nav .gif{
+    width: 50px;
+}
+.nav .gif img{
+    width: 100%;
+}
+.content .text{
+    width: 48%;
+    padding: 20px;
+    animation-name: myshep;
+    animation-duration: 2s;
+    font-size: 25px;
+}
+.content .text li{
+    padding: 12px;
+}
+.text a{
+    color: #03045e;
+}
+@keyframes myshep {
+    from{
+     transform: translateX(-100px);  
+    }
+    to{
+
+     transform: translateX(0px);
+    }
+    
+}
+
+.content .suwret{
+    width: 48%;
+    position: relative;
+    top: 90px;
+    animation-name: myon;
+    animation-duration: 2s;
+}
+@keyframes myon {
+    from{
+     transform: translateX(100px);  
+    }
+    to{
+
+     transform: translateX(0px);
+    }
+    
+}
+.content .suwret img{
+    width: 100%;
+}
+#men{
+    padding: 10px;
+    font-size: 45px;
+    animation-name: myjoqar;
+    animation-duration: 2s;
+
+}
+.orta{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@keyframes myjoqar {
+    from{
+     transform: translateY(-100px);  
+    }
+    to{
+
+     transform: translateY(0px);
+    }
+    
+}
+#close-btn{
+    display: none;
+    background: none;
+    border: none;
+    font-size: 25px;
+    padding: 5px;
+    color: white;
+}
+
+
+
+
+.resume-card{
+    background-color: white;
+    width: 95%;
+    padding: 35px;
+    margin-right: 100%;
+    margin-top: 90px;
+}
+.resume-card .tye{
+    text-align: center;
+}
+.resume-card .text-resume{
+    width: 80%;
+    margin: 0 auto;
+}
+.resume-card .text-resume h1{
+    color: #219ebc;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.footer{
+    background-color: black;
+    color: white;
+    margin-top: 50px;
+    padding: 50px;
+}
+.footer .basi{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 50px; */
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
+} 
+.footer .basi a{
+    color: white;
+    font-size: 25px;
+    padding: 7px;
+}
+.footer .basi li{
+    margin-top: 4px;
+}
+#grtr {
+display: flex;
+gap: 5px;
+}
+
+.as{
+    text-align: center;
+    margin-top: 30px;
+}
+
+@media(max-width:799px){
+    html{
+     font-size: 0.7rem;
+    }
+    .big-nav{
+        margin-top: 20px;
+    }
+    .content{
+        /* flex-wrap: wrap-reverse; */
+        flex-wrap: wrap-reverse;
+        padding-top: 5px;
+    }
+    .content .suwret{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 0;
+        top: 0px;
+    }
+    .content .text{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 40px;
+        font-size: 15px;
+        padding: 10px;
+    }
+    .nav ul{
+        display: none;
+    }
+
+    .content .text li{
+        padding: 7px;
+    }
+    .orta{
+        padding: 5px;
+        flex-wrap: wrap;
+        
+    }
+    #men{
+        font-size: 25px;
+        padding: 0;
+        margin: 10px 0;
+    }
+    .orta h3{
+        display: none;
+    }
+    .nav .gif{
+        width: 30px;
+    }
+    .btn-bar{display: block;}
+    #btn{
+        background: none;
+        border: none;
+        font-size: 25px;
+        padding: 5px;
+        color: white;
+    }
+    #ket{
+        gap: 5px;
+        animation-duration: 1s;
+        animation-name: sdf;
+    }
+    @keyframes sdf {
+        from{
+        transform: translateX(-80px);
+        }
+        to{
+            transform: translateX(0px);
+        }
+        
+    }
+    #ket li{
+        padding: 5px;
+    }
+    .footer .basi a{
+        font-size: 14px;
+    }
+}
